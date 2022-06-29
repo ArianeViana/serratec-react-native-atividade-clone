@@ -1,18 +1,17 @@
 import { Botao, Fundo, Texto, TextoBotao } from "./styles";
-import GradienteTopo from "./../../components/GradienteTopo/index";
-import GradienteRodape from "./../../components/GradienteRodape/index";
+import Gradiente from "./../../components/Gradiente/index";
 import CabecalhoLogo from "../../components/CabecalhoLogo"
 
 const ConfirmCadastro = () => {
   return (
     <Fundo>
-      <GradienteTopo />
-      <CabecalhoLogo />
+      <Gradiente posicao="top" cor1="#cbffff" cor2="transparent"/>
+      <CabecalhoLogo /> 
       <Texto>Usuário cadastrado com sucesso!</Texto>
       <Botao>
         <TextoBotao>Login</TextoBotao>
       </Botao>
-      <GradienteRodape />
+      <Gradiente posicao="bottom" cor1="transparent" cor2="#cbffff"/>
     </Fundo>
   );
 };
