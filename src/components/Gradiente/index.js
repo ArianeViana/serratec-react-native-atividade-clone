@@ -5,7 +5,7 @@ const Gradiente = (props) => {
   if (props.posicao == "top") {
     return (
       <LinearGradient
-        colors={[props.cor1, props.cor2]}
+        colors={["#cbffff", "transparent"]}
         style={{
           position: "absolute",
           left: 0,
@@ -18,7 +18,7 @@ const Gradiente = (props) => {
   } else{
     return (
       <LinearGradient
-        colors={[props.cor1, props.cor2]}
+        colors={["transparent", "#cbffff"]}
         style={{
           position: "absolute",
           left: 0,
