@@ -1,6 +1,5 @@
 import styled from "styled-components/native";
-import colors from "../Theme/colors";
-
+import colors from "../../Theme/colors";
 
 export const ContainerGeral = styled.View`
   background-color: ${colors.terciary};
@@ -8,7 +7,7 @@ export const ContainerGeral = styled.View`
 `;
 
 export const ContainerInterno = styled.View`
-  flex: 0.80;
+  flex: 0.8;
   justify-content: space-around;
   align-items: center;
 `;

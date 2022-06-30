@@ -1,5 +1,6 @@
 import styled from "styled-components/native";
-import colors from "../Theme/colors";
+import colors from "../../Theme/colors";
+
 
 export const Container = styled.View`
   flex: 1;
@@ -7,7 +8,7 @@ export const Container = styled.View`
 `;
 
 export const Header = styled.View`
-  height: 100;
+  height: 100px;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -15,56 +16,40 @@ export const Header = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: 23;
+  font-size: 23px;
   font-weight: bold;
   color: ${colors.secondary};
   text-align: center;
-  margin-left: 25;
+  margin-left: 25px;
 `;
 
 export const Imagem = styled.Image`
-  width: 50;
-  height: 50;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
 `;
 
-export const InputTexto = styled.TextInput`
-  width: 100%;
-  height: 35;
-  color: ${colors.secondary};
-  font-size: 15;
-  padding: 10px;
-  width: 60%;
-  background-color: ${colors.tertiary};
-  border-radius: 10px;
-  border: 1px solid;
-  border-color: ${colors.primary};
-  height: 35;
-  align-self: center;
-  box-shadow: 0px 5px 5px #2f4f4f;
-`;
-
 export const Body = styled.View`
-  height: 400;
+  height: 400px;
   justify-content: space-evenly;
 `;
 
 export const TextoSelecionarImagem = styled.Text`
-  font-size: 13;
+  font-size: 13px;
   align-self: center;
   color: ${colors.secondary};
 `;
 
 export const IconeTexto = styled.TouchableOpacity`
-  margin-left: 3;
+  margin-left: 3px;
 `;
 
 export const BotaoCadastrar = styled.TouchableOpacity`
-  width: 120;
-  height: 30;
+  width: 120px;
+  height: 30px;
   background-color: ${colors.tertiary};
   align-self: center;
-  margin-top: 25;
+  margin-top: 25px;
   border-radius: 10px;
   border: 1px solid;
   justify-content: center;

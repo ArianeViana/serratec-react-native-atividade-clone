@@ -4,7 +4,6 @@ import {
   Title,
   Header,
   Body,
-  InputTexto,
   BotaoCadastrar,
   TextoBotaoCadastrar,
   Imagem,
@@ -15,6 +14,7 @@ import { useNavigation } from "@react-navigation/native";
 import { TouchableOpacity } from "react-native";
 import Icones from "./../../components/Icones/index";
 import Gradiente from './../../components/Gradiente/index';
+import EntradaTexto from './../../components/EntradaTexto/index';
 
 const CadastroProdutos = () => {
   const navigation = useNavigation();
@@ -39,10 +39,10 @@ const CadastroProdutos = () => {
         <Imagem source={require("../../../assets/SplashScreen.png")} />
       </Header>
       <Body>
-        <InputTexto placeholder="Nome" />
-        <InputTexto placeholder="Preço R$" />
-        <InputTexto placeholder="Quantidade em Estoque" />
-        <InputTexto placeholder="Imagem" />
+        <EntradaTexto placeholder="Nome" />
+        <EntradaTexto placeholder="Preço R$" />
+        <EntradaTexto placeholder="Quantidade em Estoque" />
+        <EntradaTexto placeholder="Imagem" />
         <TextoSelecionarImagem>
           Selecionar Imagem
           <IconeTexto>

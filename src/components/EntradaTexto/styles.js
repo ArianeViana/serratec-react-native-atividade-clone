@@ -1,4 +1,6 @@
+
 import styled from "styled-components/native";
+import colors from "../../Theme/colors";
 
 export const InputTexto = styled.TextInput`
   width: 100%;

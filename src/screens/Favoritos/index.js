@@ -1,34 +1,32 @@
 import React from "react";
-import { FlatList } from "react-native";
+import { FlatList, TouchableOpacity, View } from "react-native";
 import {
   Container,
   Header,
-  LogOut,
   Title,
   Imagem,
   ImagemCard,
   Cards,
   TextCards,
+  InconeX,
 } from "./styles.js";
-import {
-  AntDesign,
-} from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
-import Gradiente from './../../components/Gradiente/index';
+import Gradiente from "./../../components/Gradiente/index";
 import Icones from "./../../components/Icones/index";
 
 const Lista = [
   {
     id: 1,
     imagem: require("../../../assets/2.png"),
-    produto: "produto 1",
+    produto: "Produto 1",
     preco: "Preço R$ 50",
     estoque: "1 Unidades em estoque",
   },
   {
     id: 2,
     imagem: require("../../../assets/5.jpg"),
-    produto: "produto 5",
+    produto: "Produto 5",
     preco: "Preço R$40",
     estoque: "20 Unidades em estoque",
   },
@@ -43,9 +41,12 @@ const Lista = [
 
 const Item = ({ produto, preco, estoque, imagem }) => (
   <Cards>
+    <InconeX>
+      <AntDesign name="close" size={18} color="black" />
+    </InconeX>
     <ImagemCard source={imagem} />
-    <TextCards>{produto}</TextCards>
-    <TextCards>{preco}</TextCards>
+    <TextCards style={{ fontWeight: "bold" }}>{produto}</TextCards>
+    <TextCards style={{ fontWeight: "bold" }}>{preco}</TextCards>
     <TextCards>{estoque}</TextCards>
   </Cards>
 );
@@ -53,44 +54,43 @@ const Item = ({ produto, preco, estoque, imagem }) => (
 const Favoritos = () => {
   const navigation = useNavigation();
 
-  function openScreenCadastroDeProdutos() {
-    navigation.navigate("CadastroProdutos");
-  }
-
   function openScreenHome() {
     navigation.navigate("Home");
   }
 
-  function openScreenFavoritos() {
-    navigation.navigate("Favoritos");
-  }
-
   const itemRenderizado = ({ item }) => (
-    <Item imagem={item.imagem} produto={item.produto} preco={item.preco} estoque={item.estoque}   />
+    <Item
+      imagem={item.imagem}
+      produto={item.produto}
+      preco={item.preco}
+      estoque={item.estoque}
+    />
   );
 
   return (
     <Container>
-       <Gradiente posicao="top"/>
+      <Gradiente posicao="top" />
       <Header>
-        <LogOut>
+        <TouchableOpacity>
           <AntDesign
             name="logout"
-            size={12}
+            size={20}
             color="black"
             onPress={openScreenHome}
           />
-        </LogOut>
+        </TouchableOpacity>
         <Title>Favoritos</Title>
         <Imagem source={require("../../../assets/SplashScreen.png")} />
       </Header>
-      <FlatList
-        data={Lista}
-        renderItem={itemRenderizado}
-        keyExtractor={(item) => item.id}
-      />
+      <View>
+        <FlatList
+          data={Lista}
+          renderItem={itemRenderizado}
+          keyExtractor={(item) => item.id}
+        />
+      </View>
       <Icones />
-      <Gradiente posicao="bottom"/>
+      <Gradiente posicao="bottom" />
     </Container>
   );
 };

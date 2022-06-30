@@ -1,63 +1,64 @@
 import styled from "styled-components/native";
-import colors from "../Theme/colors";
+import colors from "../../Theme/colors";
+
 
 export const Container = styled.View`
   flex: 1;
-  justify-content: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 `;
 
 export const Header = styled.View`
-  height: 100;
+  height: 100px;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 20px;
-`;
-
-export const LogOut = styled.TouchableOpacity`
-  padding-right: 35px;
+  align-items: center;
+  margin-top: 10px;
 `;
 
 export const Title = styled.Text`
-  font-size: 15;
+  font-size: 23px;
   font-weight: bold;
   color: ${colors.secondary};
   text-align: center;
+  margin-left: 25px;
 `;
 
 export const Imagem = styled.Image`
-  width: 30;
-  height: 30;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
-  margin-left: 50px;
 `;
 
 export const Cards = styled.View`
   margin: 25px;
   width: 80%;
-  height: 70;
+  height: 80px;
   background-color: white;
-  align-items: center;
   border: 1px solid;
   border-color: #00ffff;
+  border-radius: 5px;
   box-shadow: 0px 5px 5px #2f4f4f;
+  align-self: center;
+`;
+
+export const InconeX = styled.TouchableOpacity`
+  align-self: flex-end;
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
 `;
 
 export const ImagemCard = styled.Image`
-  width: 120;
-  height: 60;
+  width: 120px;
+  height: 60px;
   border-radius: 5px;
-  
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
 `;
 
 export const TextCards = styled.Text`
   color: ${colors.secondary};
-`;
-
-export const Icones = styled.Pressable`
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 200px;
-  height: 30;
-  background-color: #00ffff;
+  text-align: justify;
+  margin-left: 130px;
 `;

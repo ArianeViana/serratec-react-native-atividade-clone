@@ -1,7 +1,7 @@
-import { EntradaContainer } from "./styles";
+import { InputTexto } from "./styles";
 
 const EntradaTexto = ({ placeholder }) => {
-  return <EntradaContainer placeholder={placeholder} />;
+  return <InputTexto placeholder={placeholder} />;
 };
 
 export default EntradaTexto;
