@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import colors from "../Theme/colors";
+import colors from "../../Theme/colors";
 
 export const Container = styled.View`
   flex: 1;
