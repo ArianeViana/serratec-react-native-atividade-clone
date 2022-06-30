@@ -12,6 +12,7 @@ const Gradiente = (props) => {
           right: 0,
           top: 0,
           height: "30%",
+          zIndex: -1,
         }}
       />
     );
@@ -25,6 +26,7 @@ const Gradiente = (props) => {
           right: 0,
           bottom: 0,
           height: "30%",
+          zIndex: -1,
         }}
       />
     );
