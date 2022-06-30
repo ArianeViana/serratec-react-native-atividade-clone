@@ -3,8 +3,6 @@ import styled from "styled-components/native";
 import colors from "../../Theme/colors";
 
 export const InputTexto = styled.TextInput`
-  width: 100%;
-  height: 35;
   color: ${colors.secondary};
   font-size: 15;
   padding: 10px;

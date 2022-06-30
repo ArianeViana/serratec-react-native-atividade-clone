@@ -6,10 +6,10 @@ import CadastroUsuario from "./src/screens/CadastroUsuario";
 
 export default function App() {
   return (
-    // <NavigationContainer>
-    //   <Rotas />
-    // </NavigationContainer>
-    <CadastroUsuario></CadastroUsuario>
+    <NavigationContainer>
+      <Rotas />
+    </NavigationContainer>
+    // <CadastroUsuario></CadastroUsuario>
   )
 }
 
