@@ -1,4 +1,4 @@
-import { Botao, ContainerGeral, ContainerInterno, Texto, TextoBotao } from "./styles";
+import { Botao, ContainerGeral, ContainerInterno, Texto, TextoBotao } from "./style";
 import Gradiente from "./../../components/Gradiente/index";
 import CabecalhoLogo from "../../components/CabecalhoLogo";
 

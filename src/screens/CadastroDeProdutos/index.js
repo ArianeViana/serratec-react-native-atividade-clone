@@ -36,7 +36,7 @@ const CadastroProdutos = () => {
           />
         </TouchableOpacity>
         <Title>Cadastro de Produto </Title>
-        <Imagem source={require("../../../assets/SplashScreen.png")} />
+        <Imagem source={require("../../../assets/logo.jpeg")} />
       </Header>
       <Body>
         <EntradaTexto placeholder="Nome" />

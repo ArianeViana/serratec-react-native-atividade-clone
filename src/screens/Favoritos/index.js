@@ -80,7 +80,7 @@ const Favoritos = () => {
           />
         </TouchableOpacity>
         <Title>Favoritos</Title>
-        <Imagem source={require("../../../assets/SplashScreen.png")} />
+        <Imagem source={require("../../../assets/logo.jpeg")} />
       </Header>
       <View>
         <FlatList
