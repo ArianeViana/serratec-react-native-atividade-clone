@@ -1,30 +1,34 @@
 import styled from "styled-components/native";
+import colors from "../Theme/colors";
 
-export const Fundo = styled.View`
-  background-color: #fff;
+
+export const ContainerGeral = styled.View`
+  background-color: ${colors.terciary};
   flex: 1;
+`;
+
+export const ContainerInterno = styled.View`
+  flex: 0.80;
+  justify-content: space-around;
   align-items: center;
-  justify-content: flex-start;
 `;
 
 export const Texto = styled.Text`
   font-size: 25px;
-  color: #000080;
+  color: ${colors.secondary};
   font-weight: bold;
   text-align: center;
-  margin-bottom: 50px;
 `;
 
 export const Botao = styled.Pressable`
-  background-color: #ffffff;
+  background-color: ${colors.terciary};
   padding: 5px 40px;
-  border: 3px solid #0FF;
+  border: 3px solid #0ff;
   border-radius: 10px;
 `;
 
 export const TextoBotao = styled.Text`
   font-size: 20px;
   font-weight: 500;
-  color: #000080;
-  
+  color: ${colors.secondary};
 `;
