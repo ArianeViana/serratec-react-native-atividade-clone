@@ -12,8 +12,10 @@ const InputEye = ({ placeholder }) => {
         color={colors.secondary}
         style={{
           position: "absolute",
-          marginStart: 140,
+          marginStart: 180,
           alignSelf: 'center',
+          opacity:0.7, 
+          
         }}
       />
     </WrapperInputEye>

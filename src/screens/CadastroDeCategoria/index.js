@@ -36,7 +36,7 @@ const CadastroCategoria = () => {
           />
         </TouchableOpacity>
         <Title>Cadastro de Categoria </Title>
-        <Imagem source={require("../../../assets/SplashScreen.png")} />
+        <Imagem source={require("../../../assets/logo.jpeg")} />
       </Header>
       <Body>
         <EntradaTexto placeholder="Nome" />

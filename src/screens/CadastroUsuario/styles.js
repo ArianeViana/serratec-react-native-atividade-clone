@@ -29,7 +29,7 @@ export const Imagem = styled.Image`
 `;
 
 export const Body = styled.View`
-  height: 500px;
+  height: 400px;
   justify-content: space-evenly;
 `;
 

@@ -3,6 +3,7 @@ import Gradiente from "../../components/Gradiente";
 import { Container, Cabecalho, Titulo, Imagem, Body, BotaoCadastrar, TextoBotaoCadastrar } from "./styles";
 import { TouchableOpacity } from "react-native";
 import EntradaTexto from "../../components/EntradaTexto";
+import InputEye from './../../components/InputEye/index';
 
 const CadastroUsuario = () => {
   return (
@@ -24,8 +25,8 @@ const CadastroUsuario = () => {
         <EntradaTexto placeholder="Nome" />
         <EntradaTexto placeholder="CPF" />
         <EntradaTexto placeholder="Data de Nascimento" />
-        <EntradaTexto placeholder="Senha" />
-        <EntradaTexto placeholder="Confirmar Senha" />
+        <InputEye placeholder="Senha" />
+        <InputEye placeholder="Confirmar Senha" />
         <BotaoCadastrar>
           <TextoBotaoCadastrar>Cadastrar</TextoBotaoCadastrar>
         </BotaoCadastrar>

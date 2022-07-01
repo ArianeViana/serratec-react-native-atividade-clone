@@ -133,7 +133,7 @@ const Produtos = () => {
           />
         </TouchableOpacity>
         <Title>Produtos</Title>
-        <Imagem source={require("../../../assets/SplashScreen.png")} />
+        <Imagem source={require("../../../assets/logo.jpeg")} />
       </Header>
       <FlatList
         data={Lista}
