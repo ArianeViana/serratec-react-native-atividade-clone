@@ -29,12 +29,6 @@ export const Imagem = styled.Image`
   border-radius: 50px;
 `;
 
-// export const Body = styled.View`
-//   width: 100%;
-//   height: 500px;
-//   /* border: 1px solid; */
-// `;
-
 export const MiniCard = styled.View`
   width: 80px;
   height: 20px;

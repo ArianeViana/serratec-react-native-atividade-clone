@@ -73,42 +73,56 @@ const Lista = [
   },
 ];
 
-const Item = ({ produto, preco, estoque, imagem, quantidade }) => (
-  <Cards>
-    <ImagemCard source={imagem} />
-    <Descricao>
-      <TextCards style={{ fontWeight: "bold" }}>{produto}</TextCards>
-      <TextCards style={{ fontWeight: "bold" }}>{preco}</TextCards>
-      <TextCards>{estoque}</TextCards>
-      <MiniCard>
-        <QuantidadeProdutos style={{ fontWeight: "bold" }}>
-          {quantidade}
-        </QuantidadeProdutos>
-      </MiniCard>
-    </Descricao>
-    <Check>
-      <Ionicons name="ios-checkmark-sharp" size={20} color="#141568" />
-    </Check>
-    <Star>
-      <Feather name="star" size={20} color="#141568" />
-    </Star>
-    <EditarLixo>
-      <Lixo>
-        <Feather name="trash" size={20} color="red" />
-      </Lixo>
-      <Editar>
-        <AntDesign name="edit" size={20} color="#141568" />
-      </Editar>
-    </EditarLixo>
-  </Cards>
-);
-
 const Produtos = () => {
   const navigation = useNavigation();
 
-  function openScreenHome() {
-    navigation.navigate("Home");
+  function openScreenLogOut() {
+    navigation.navigate("Login");
   }
+
+  function openScreenAlterarProduto() {
+    navigation.navigate("AlterarProduto");
+  }
+
+  function openScreenCadastroProdutos() {
+    navigation.navigate("CadastroProdutos");
+  }
+
+  const Item = ({ produto, preco, estoque, imagem, quantidade }) => (
+      
+    <Cards>
+      <ImagemCard source={imagem} />
+      <Descricao>
+        <TextCards style={{ fontWeight: "bold" }}>{produto}</TextCards>
+        <TextCards style={{ fontWeight: "bold" }}>{preco}</TextCards>
+        <TextCards>{estoque}</TextCards>
+        <MiniCard>
+          <QuantidadeProdutos style={{ fontWeight: "bold" }}>
+            {quantidade}
+          </QuantidadeProdutos>
+        </MiniCard>
+      </Descricao>
+      <Check>
+        <Ionicons name="ios-checkmark-sharp" size={20} color="#141568" />
+      </Check>
+      <Star>
+        <Feather name="star" size={20} color="#141568" />
+      </Star>
+      <EditarLixo>
+        <Lixo>
+          <Feather name="trash" size={20} color="red" />
+        </Lixo>
+        <Editar>
+          <AntDesign
+            name="edit"
+            size={20}
+            color="#141568"
+            onPress={openScreenAlterarProduto}
+          />
+        </Editar>
+      </EditarLixo>
+    </Cards>
+  );
 
   const itemRenderizado = ({ item }) => (
     <Item
@@ -129,12 +143,13 @@ const Produtos = () => {
             name="logout"
             size={20}
             color="black"
-            onPress={openScreenHome}
+            onPress={openScreenLogOut}
           />
         </TouchableOpacity>
         <Title>Produtos</Title>
         <Imagem source={require("../../../assets/logo.jpeg")} />
       </Header>
+      <TouchableOpacity style={{marginLeft:'15px'}}><AntDesign name="plus" size={24} color="#141568" onPress={openScreenCadastroProdutos} /></TouchableOpacity>
       <FlatList
         data={Lista}
         renderItem={itemRenderizado}

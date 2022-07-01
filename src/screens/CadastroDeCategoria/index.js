@@ -19,8 +19,12 @@ import EntradaTexto from './../../components/EntradaTexto/index';
 const CadastroCategoria = () => {
   const navigation = useNavigation();
 
-  function openScreenHome() {
-    navigation.navigate("Home");
+  function openScreenCategoria() {
+    navigation.navigate("CadastroCategoria");
+  }
+
+  function openScreenLogOut() {
+    navigation.navigate("Login");
   }
 
   return (
@@ -32,7 +36,7 @@ const CadastroCategoria = () => {
             name="logout"
             size={20}
             color="black"
-            onPress={openScreenHome}
+            onPress={openScreenLogOut}
           />
         </TouchableOpacity>
         <Title>Cadastro de Categoria </Title>
@@ -47,7 +51,7 @@ const CadastroCategoria = () => {
             <AntDesign name="upload" size={13} color="#141568" />
           </IconeTexto>
         </TextoSelecionarImagem>
-        <BotaoCadastrar>
+        <BotaoCadastrar onPress={openScreenCategoria}>
           <TextoBotaoCadastrar>Cadastrar</TextoBotaoCadastrar>
         </BotaoCadastrar>
       </Body>

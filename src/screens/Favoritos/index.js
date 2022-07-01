@@ -54,8 +54,8 @@ const Item = ({ produto, preco, estoque, imagem }) => (
 const Favoritos = () => {
   const navigation = useNavigation();
 
-  function openScreenHome() {
-    navigation.navigate("Home");
+  function openScreenLogOut() {
+    navigation.navigate("Login");
   }
 
   const itemRenderizado = ({ item }) => (
@@ -76,7 +76,7 @@ const Favoritos = () => {
             name="logout"
             size={20}
             color="black"
-            onPress={openScreenHome}
+            onPress={openScreenLogOut}
           />
         </TouchableOpacity>
         <Title>Favoritos</Title>

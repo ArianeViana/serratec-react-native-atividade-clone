@@ -1,15 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 import { Logout, Botao, CaixaTexto, Container, TextoBotao, Imagem, Topo, Titulo, SeleImagem, Caixas } from './styles';
-import { AntDesign, Feather, SimpleLineIcons, MaterialCommunityIcons } from '@expo/vector-icons';
-
-
+import { AntDesign } from '@expo/vector-icons';
 import { TextoCaixa } from '../AlterarProduto/styles';
 import { useNavigation } from '@react-navigation/native';
-
 import Icones from '../../components/Icones';
 import Gradiente from '../../components/Gradiente';
-// import { Container } from './styles';
+
 
 const AlterarCategoria = () => {
 
@@ -17,6 +13,10 @@ const AlterarCategoria = () => {
 
   const TelaLogout = () => {
     navigation.navigate('Login')
+  }
+
+  const AlterarCategoria = () => {
+    navigation.navigate('AlterarCategoria')
   }
 
   return (
@@ -36,7 +36,7 @@ const AlterarCategoria = () => {
         </CaixaTexto>
         <SeleImagem>Selecionar imagem <AntDesign name="upload" size={18} color="#000080" /></SeleImagem>
       </Caixas>
-      <Botao>
+      <Botao onPress={AlterarCategoria}>
         <TextoBotao>ALTERAR</TextoBotao>
       </Botao>
       <Icones />

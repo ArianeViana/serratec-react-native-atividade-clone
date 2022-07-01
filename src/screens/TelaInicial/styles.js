@@ -74,10 +74,15 @@ export const TextoBotaoCadastrar = styled.Text`
   font-weight: bold;
 `;
 
-export const EditarLixo = styled.View`
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 75%;
+export const IconesEditar = styled.View`
+flex-direction: row;
+justify-content: center;
+margin-left: 150px;
+
+`;
+
+export const IconeLixo = styled.TouchableOpacity`
+  margin-right: 5px;
 `;
 
 export const EditarImagem = styled.View`
@@ -96,8 +101,13 @@ export const ImagemCriadores = styled.Image`
 export const TituloTexto = styled.Text`
   color: ${colors.secondary};
   font-size: 25;
-  margin: 20px;
+  
 `;
+
+export const SubTituloCategoria = styled.View`
+flex-direction: row;
+`;
+
 
 export const TextoLoren = styled.Text`
   font-size: 10;
@@ -141,6 +151,8 @@ export const EditarTecs = styled.View`
   width: 85%;
   margin-left: 30px;
 `;
+
+
 
 export const TextoTecs = styled.Text`
   color: #05148c;

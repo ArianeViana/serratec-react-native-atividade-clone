@@ -9,8 +9,8 @@ const Icones = () => {
     navigation.navigate("Favoritos");
   }
 
-  function openScreenHome() {
-    navigation.navigate("Home");
+  function openScreenTelaInicial() {
+    navigation.navigate("TelaInicial");
   }
 
   function openScreenProdutos() {
@@ -19,7 +19,7 @@ const Icones = () => {
 
   return (
     <StyleIcones>
-      <AntDesign name="home" size={30} color="grey" onPress={openScreenHome} />
+      <AntDesign name="home" size={30} color="grey" onPress={openScreenTelaInicial} />
       <Feather
         name="shopping-bag"
         size={30}

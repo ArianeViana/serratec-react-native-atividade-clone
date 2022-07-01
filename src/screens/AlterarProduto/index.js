@@ -1,12 +1,9 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import { Tela, Logout, Botao, CaixaTexto, Container, TextoBotao, Imagem, Topo, Titulo, SeleImagem, Pacote, TextoCaixa } from './styles';
-import { AntDesign, Feather, SimpleLineIcons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { Logout, Botao, CaixaTexto, Container, TextoBotao, Imagem, Topo, Titulo, SeleImagem, Pacote, TextoCaixa } from './styles';
+import { AntDesign } from '@expo/vector-icons';
 import Icones from "./../../components/Icones/index";
-
 import { useNavigation } from '@react-navigation/native';
 import Gradiente from '../../components/Gradiente';
-// import { Container } from './styles';
 
 
 const AlterarProduto = () => {
@@ -15,6 +12,10 @@ const AlterarProduto = () => {
 
   const TelaLogout = () => {
     navigation.navigate("Login")
+  }
+
+  const AlterarProduto = () => {
+    navigation.navigate("AlterarProduto")
   }
 
   return (
@@ -40,7 +41,7 @@ const AlterarProduto = () => {
         </CaixaTexto>
         <SeleImagem>Selecionar imagem <AntDesign name="upload" size={18} color="#000080" /></SeleImagem>
       </Pacote>
-      <Botao>
+      <Botao onPress={AlterarProduto}>
         <TextoBotao>ALTERAR</TextoBotao>
       </Botao>
       <Icones />
