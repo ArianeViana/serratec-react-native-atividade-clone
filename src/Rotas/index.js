@@ -6,6 +6,7 @@ import ConfirmCadastro from './../screens/ConfirmCadastro/index';
 import AlterarProduto from "../screens/AlterarProduto";
 import AlterarCategoria from "../screens/AlterarCategoria";
 import CadastroCategoria from './../screens/CadastroDeCategoria/index';
+import Produtos from './../screens/Produtos/index';
 
 
 
@@ -14,6 +15,13 @@ const Stack = createNativeStackNavigator();
 const Rotas = () => {
   return (
     <Stack.Navigator>
+        <Stack.Screen
+        name="Produtos"
+        component={Produtos}
+        options={{
+          headerShown: false,
+        }}
+      />
        <Stack.Screen
       name="CadastroCategoria"
       component={CadastroCategoria}

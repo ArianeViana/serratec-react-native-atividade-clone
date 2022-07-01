@@ -13,8 +13,8 @@ const Icones = () => {
     navigation.navigate("Home");
   }
 
-  function openScreenCadastroDeProdutos() {
-    navigation.navigate("CadastroProdutos");
+  function openScreenProdutos() {
+    navigation.navigate("Produtos");
   }
 
   return (
@@ -24,7 +24,7 @@ const Icones = () => {
         name="shopping-bag"
         size={30}
         color="grey"
-        onPress={openScreenCadastroDeProdutos}
+        onPress={openScreenProdutos}
       />
       <Feather
         name="star"
