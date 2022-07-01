@@ -3,9 +3,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import Rotas from './src/Rotas/index';
 
 
-
-
-
 export default function App() {
   return (
     <NavigationContainer>

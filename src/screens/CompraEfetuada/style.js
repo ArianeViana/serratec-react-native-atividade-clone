@@ -25,6 +25,7 @@ export const Botao = styled.Pressable`
   padding: 5px 40px;
   border: 3px solid #0ff;
   border-radius: 10px;
+  box-shadow: 0px 5px 5px #2f4f4f;
 `;
 
 export const TextoBotao = styled.Text`

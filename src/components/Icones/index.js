@@ -17,6 +17,11 @@ const Icones = () => {
     navigation.navigate("Produtos");
   }
 
+  function openScreenCarrinho() {
+    navigation.navigate("Carrinho");
+  }
+
+
   return (
     <StyleIcones>
       <AntDesign name="home" size={30} color="grey" onPress={openScreenTelaInicial} />
@@ -32,7 +37,8 @@ const Icones = () => {
         color="grey"
         onPress={openScreenFavoritos}
       />
-      <MaterialCommunityIcons name="cart-outline" size={30} color="grey" />
+      <MaterialCommunityIcons name="cart-outline" size={30} color="grey" 
+      onPress={openScreenCarrinho}/>
     </StyleIcones>
   );
 };

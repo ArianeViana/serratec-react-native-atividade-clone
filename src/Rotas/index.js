@@ -14,6 +14,7 @@ import RecuperarSenha from "./../screens/RecuperarSenha/index";
 import CriarSenha from "./../screens/CriarSenha/index";
 import CompraEfetuada from "./../screens/CompraEfetuada/index";
 import CadastroUsuario from "./../screens/CadastroUsuario/index";
+import Carrinho from "../screens/Carrinho/index";
 
 const Stack = createNativeStackNavigator();
 
@@ -114,6 +115,13 @@ const Rotas = () => {
       <Stack.Screen
         name="AlterarProduto"
         component={AlterarProduto}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="Carrinho"
+        component={Carrinho}
         options={{
           headerShown: false,
         }}
